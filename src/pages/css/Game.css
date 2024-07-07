@@ -1,0 +1,88 @@
+ /* @font-face {
+  font-family: 'Bicubik';
+  src: url('../font/Bicubik-71qR.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}  */
+.Game{
+  
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    background: url("../img/img.png");
+    background-size: cover;
+    height: 100vh;
+    /* background-color: red; */
+}
+.Game__header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+.Game__header__left, .Game__header__right{
+position: relative;
+}
+.Game__header__left__image,.Game__header__right__image{
+    width: 100%;
+
+}
+.Game__header__left__button{
+width: 32px;
+height: 32px;
+background: #0974F84D;
+display: flex;
+position: absolute;
+justify-content: center;
+align-items: center;
+top: 15px;
+left: 15px;
+}
+.Game__header__right__button{
+    width: 32px;
+    height: 32px;
+    background: #0974F84D;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 15px;
+}
+.Game__header__button{
+    position: relative;
+    top: -1px;
+}
+.Game__header__right__button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px; /* Soya rasmdan 3px o'ngga siljigan */
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5); /* Soya effekti */
+    filter: blur(2px); /* Soyani sal xiralashtirib turadi */
+    z-index: -1; /* Soyani rasm orqasiga joylashtiradi */
+  }
+.Game__header__lenta__first{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+.Game__header__lenta__second{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+
+
+}
+.Game__header__lenta__three{
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+}
+.Game__header__lenta__four{
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+}
