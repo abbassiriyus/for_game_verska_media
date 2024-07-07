@@ -22,6 +22,7 @@ function Game() {
          <img src={header_lenta__three} alt="" className="Game__header__lenta__three" />
          <img src={header_lenta__four} alt="" className="Game__header__lenta__four" />
         </div>
+        <h1 className='Game__header__left__h1'>домой</h1>
       </div>
       <div className="Game__header__right">
         <img className='Game__header__right__image' src={header_left} alt="" />
