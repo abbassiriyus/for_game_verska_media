@@ -11,7 +11,7 @@
     width: 100%;
     background: url("../img/img.png");
     background-size: cover;
-    height: 100vh;
+    height: 87vh;
     /* background-color: red; */
     position: relative;
 }
@@ -52,19 +52,35 @@ left: 15px;
 .Game__header__button{
     position: relative;
     top: -1px;
+    z-index: 2;
 }
-.Game__header__right__button::after {
+.Game__header__left__button::after {
     content: "";
     position: absolute;
-    top: 0;
-    z-index: 21234;
-    left: 3px; /* Soya rasmdan 3px o'ngga siljigan */
+    top: -4px;
+    left: 4px;
     width: 100%;
     height: 100%;
-    background-color: red;
-    box-shadow: 3px 0 10px rgba(109, 20, 20, 0.5); /* Soya effekti */
-    filter: blur(2px); /* Soyani sal xiralashtirib turadi */
-    z-index: -1; /* Soyani rasm orqasiga joylashtiradi */
+    transform: scale(1.1);
+    background-image: url("/src/pages/img/home\ \(1\).png"); /* Rasm manzilingizni kiriting */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: inherit; /* div rasmining shaklini olish */
+  }
+  .Game__header__right__button::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    background-image: url("/src/pages/img/menu.png"); /* Rasm manzilingizni kiriting */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: inherit; /* div rasmining shaklini olish */
   }
 .Game__header__lenta__first{
     position: absolute;
@@ -94,11 +110,12 @@ font-size: 10px;
 font-weight: 400;
 line-height: 12.38px;
 text-align: left;
-text-shadow: 2px -1px 0px 0px #076CE933;
 color: #076CE9;
 position: absolute;
 top: 2px;
 right: 69px;
+text-shadow: 2px -1px 0px #076CE933;
+
 }
 .Game__header__right__h1{
     font-family: Bicubik;
@@ -106,41 +123,44 @@ font-size: 10px;
 font-weight: 400;
 line-height: 12.38px;
 text-align: left;
-text-shadow: 2px -1px 0px 0px #076CE933;
 color: #076CE9;
 position: absolute;
 top: 2px;
 left: 69px;
+text-shadow: 2px -1px 0px #076CE933;
+
 }
 .Game__patron{
     position: absolute;
-    top: 196px;
+    top: 162px;
     left: 27%;
 }
 .Game__bot{
     position: absolute;
-    top: 111px;
+    top: 78px;
     right: 24%;
 }
 .Game__gun{
     width: 273px;
     position: absolute;
-    bottom: 0%;
+    bottom: 4px;
+
     right: -24%;
 
 }
 .game_body{
     position: relative;
     /* background-color: red; */
-    height: 67vh;
+    height: 54vh;
     overflow: hidden;
 }
 .Game__time__credits{
    width: 141px;
-    height: 45px;
     margin: auto;  
     margin-top: -100px;
     position: relative;
+    transform: scale(1.3);
+    /* background-color: red; */
 }
 .Game__time__backImg{
    width: 100%;
@@ -151,23 +171,335 @@ left: 69px;
 color:  #FFD954;
 background-size: 150%;
 }
-.Game__time__credits__h1{
+.Game__time__credits__h1 {
     font-family: Bicubik;
-font-size: 14px;
-font-weight: 400;
-line-height: 17.33px;
-text-align: center;
-color: #FFD954;
-position: absolute;
-top: 10px;
-left: 38px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.33px;
+    text-align: center;
+    color: #FFD954;
+    position: absolute;
+    top: 13px;
+    left: 41px;
+    text-shadow: 2px 0px 0px #FDBD1733 !important;
 }
 .Game__time__credits__rigthLine{
     position: absolute;
     top: -10px;
 }
-.Game__time__credits__leftLine{
+.Game__time__credits__leftLine {
+    position: absolute;
+    top: 17px;
+    height: 29px;
+    left: 16px;
+    clip-path: polygon(20% 0, 97% 0, 86% 70%, 0 100%);
+}
+.Game__time__credits__rigthLine{
     position: absolute;
     top: 18px;
-    left: 16px;
+    right: 7px; 
+    clip-path:polygon(0 0, 68% 0, 99% 100%, 11% 64%);
+} 
+/* .romb {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  } */
+/* .romb {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    clip-path: polygon(15% 0, 85% 0, 100% 100%, 0 100%);} */
+
+
+    .bottom_line_light{
+        box-shadow: 0px 0px 10px 0px #FF9501;
+        background: #FFD233;
+        height: 4px;
+        width: 80px;
+        margin: auto;
+        margin-top: -18px;
+        border-radius: 2px;
+    }
+    .Game__time__record{
+        width: 224px;
+        margin: auto;
+        position: relative;
+        
+    }
+    .record_game{
+        width: 100%;
+        transform: scale(1.1);
+        
+    }
+    .Game__time__record span{
+        font-family: Bicubik;
+font-size: 27px;
+font-weight: 400;
+line-height: 33.43px;
+letter-spacing: 0.2em;
+text-align: left;
+/* background-color: linear-gradient(180deg, #E1F0FF 19.7%, #C9E9FB 75.76%); */
+text-shadow: 3px 3px 0px   #0974F833;
+color: #E1F0FF;
+/* box-shadow: 0px 0px 10px 0px #19C2EF80; */
+position: absolute;
+top: 16px;
+right: 12px;
+z-index: 2;
+    }
+    .Game_vektor_line_left{
+        height: 73px;
+        position: absolute;
+        top: -5px;
+        left:-1px;
+        border-bottom-left-radius: 10px;
+        clip-path: polygon(70.71% 100%, 100% 70.71%, 60% 29.29%, 42% 0%, 0% 0%, 0% 29.29%, 0% 70.71%, 0% 100%);
+        border-top-left-radius: 12px;
+    }
+    .Game_vektor_line_right{
+        position: absolute;
+        top: -4px;
+        right: 0px;
+        height: 73px;
+        border-bottom-right-radius: 10px;
+        clip-path: polygon(100% 100%, 100% 70.71%, 100% 0%, 63.06% 0%, 50% 14.64%, 0% 29.29%, 0% 70.71%, 0% 100%);
+      
+    }
+    .top_rekord{
+        position: absolute  ;
+        left: 45px;
+        top: -4px;
+        z-index: 232;
+    }
+    .header_lenta_first{
+        position: absolute;
+        top: -7px;
+        left: -4px;
+        width: 9%;
+    
+    }
+    .header_lenta__second{
+        position: absolute;
+        right: -4px;
+        width: 9%;
+        top: -7px;
+    }
+    .header_lenta__three{
+        position: absolute;
+        bottom: 18px;
+        left: -3px;
+    }
+    .header_lenta__four{
+        position: absolute;
+        bottom: 18px;
+        right: -3px;
+    }
+    .bottom_el_game{
+        position: absolute;
+        bottom: 14px;
+        left: 61px;
+        width: 46%;
+    }
+    .click_joistik{
+        position: absolute;
+        bottom: 0px;
+        left: 13px;
+     
+
+    }
+    .sloy_joistik{
+        width: 100%;
+        height: 123px;
+    }
+    .box_shadow_for_joistik{
+        position: absolute;
+        bottom: 1px;
+        left: -9px;
+    }
+    .arrow_joistik{
+        position: absolute;
+        left: 19px;
+        bottom: 59px;;
+    }
+    .arrow_joistik_second{
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 59px;
+        right: 20px;
+    }
+    .arrow_joistik_four{
+        transform: rotate(-92deg);
+        position: absolute;
+        bottom: 22px;
+        left: 56px;
+    }
+    .middle_joistik{
+        position: absolute;
+        left: 33px;
+        top: 34px;
+    }
+    .arrow_joistik_third{
+        position: absolute;
+        transform: rotate(90deg);
+        left: 56px;
+        top: 17px;
+    }
+    .tap_svg{
+        position: absolute;
+        bottom: -14px;
+        right: 0px;
+        width: 31%;
+    }
+    .level_game{
+        width: 100%;
+    }
+    .bottom_level_back{
+        width: 100%;
+    }
+    .game_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: absolute;
+        bottom: 39px;
+    }
+    .line_shadow_green{
+        box-shadow: 0px 0px 10px 0px #1BDD15;
+        width: 56px;
+        background: #E2FFE1;
+        border-radius: 2px;
+        height:5px;
+        position: absolute;
+        left: 40px;
+        bottom: 8px;
+        z-index: 3232;
+    }
+    .line_shadow_green2{
+        box-shadow: 0px 0px 10px 0px #1BDD15;
+        width: 56px;
+        background: #E2FFE1;
+        border-radius: 2px;
+        height: 5px;
+        position: absolute;
+        bottom: 73px;
+        left: 40px;
+        Z-INDEX: 122;
+    }
+    .game_grid_second{
+        position: relative;
+
 }
+
+      .new_gun{
+        position: absolute;
+        /* top: 27px; */
+        left: 12px;
+        /* opacity: 0; */
+        bottom: 19px;
+        width: 85%;
+      }
+      .image_for_back{
+        position: absolute;
+        /* top: 0; */
+        bottom: 14px;
+        z-index: 22;
+        left: 11px;
+        width: 86%;
+      }
+      .top_grid_first_img {
+        width: 100%;
+        position: absolute;
+        /* top: -33px; */
+        bottom: 40px;
+        z-index: 32;
+    }
+    .top_grid_second_img{
+    width: 100%;
+     position: relative;
+     z-index: 32;
+    }
+
+   
+        .game_grid_first{
+            position: relative;
+        
+    }    .el_handle{
+        position: absolute;
+        left: 54px;
+        bottom: 21px;
+        z-index: 2;
+        width: 70%;
+      } 
+      .el_handle_back_first {
+        position: absolute;
+        bottom: 16px ;
+        left: 14px;
+    }
+    .el_handle_back_second{
+        position: absolute;
+        right: 19px;
+        bottom: 16px;
+    }
+    .el_handle_second{
+        position: absolute;
+        z-index: 33;
+        bottom: 22px;
+        width: 24%;
+        right: 49px;
+    }
+    .handle_first_div span{
+        font-family: Bicubik;
+font-size: 10px;
+font-weight: 400;
+line-height: 12.38px;
+text-align: right;
+color: #076CE9;
+text-shadow: 2px -1px 0px  #076CE933;
+position: absolute;
+left: 77px;
+bottom: 47px;
+    }
+    .handle_first_div h3{
+        font-family: Bicubik;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.86px;
+text-align: right;
+color: #19C2EF;
+text-shadow: 2px -1px 0px #076CE933;
+position: absolute;
+    left: 96px;
+    bottom: 17px;
+    }
+    .game_grid_third span{
+        font-family: Bicubik;
+font-size: 10px;
+font-weight: 400;
+line-height: 12.38px;
+text-align: right;
+color: #076CE9;
+text-shadow: 2px -1px 0px  #076CE933;
+position: absolute;
+/* left: 77px; */
+right: 57px;
+bottom: 47px;
+    }
+    .game_grid_third h3{
+        font-family: Bicubik;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.86px;
+text-align: right;
+color: #19C2EF;
+text-shadow: 2px -1px 0px #076CE933;
+position: absolute;
+    /* left: 96px; */
+    bottom: 17px;
+    right: 93px;
+    }
