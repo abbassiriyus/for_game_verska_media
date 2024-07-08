@@ -9,7 +9,7 @@ import header_lenta__four from '../img/Vector (4).svg'
 import header__rectangle_button from "../img/Vector (5).svg"
 import game_ball from "../img/bot.svg"
 import patron  from "../img/Group 11.svg"
-import Game__gun from "../img/c70bd21f0d260b05052d1e3efdda726d.png"
+import Game__gun from "../img/gamer hand.svg"
 import Game__time_img from '../img/Vector 6.svg'
 import Game__time_img_right from "../img/Vector (6).svg"
 import Game__time_img_left from "../img/Vector (7).svg"
@@ -32,7 +32,10 @@ import el_handle from "../img/el (1).svg"
 import el_handle_second from "../img/el (2).svg"
 import el_handle_back_first from "../img/Rectangle 18.svg"
 import el_handle_back_second from "../img/Rectangle 18 (1).svg"
+import left_handle from "../img/left.svg"
+import right_handle from "../img/right.svg"
 import '../css/Game.css';
+import line_viability from "../img/line.png"
 function Game() {
   return (
     <div className="Game">
@@ -130,6 +133,46 @@ function Game() {
 <h3>1234</h3>
 </div>
 
+  </div>
+  <div className="viability">
+    <img className='left_handle' src={left_handle} alt="" />
+    <div className="line_for_viability">
+      <img className='line_viability' src={line_viability} alt="" />
+      <div className="red_yellow_green">
+      <div style={{background:'#D22439',border:'1px solid #D22439 '}}  className="red"></div>
+      <div style={{background:'#D22439',border:'1px solid #D22439'}}  className="red"></div>
+      <div style={{background:'#D22439',border:'1px solid #D22439'}}  className="red"></div>
+      <div style={{background:'#D22439',border:'1px solid #D22439'}}  className="red"></div>
+      <div style={{background:'#D22439',border:'1px solid #D22439'}}  className="red"></div>
+
+      <div style={{background:'#D25831',border:'1px solid #D25831'}} className="red"></div>
+      <div style={{background:'#D25831',border:'1px solid #D25831'}} className="red"></div>
+      <div style={{background:'#D25831',border:'1px solid #D25831'}} className="red"></div>
+      <div style={{background:'#D25831',border:'1px solid #D25831'}} className="red"></div>
+      <div style={{background:'#D25831',border:'1px solid #D25831'}} className="red"></div>
+      
+      <div style={{background:'#EB9319',border:'1px solid #EB9319'}} className="red"></div>
+      <div style={{background:'#EB9319',border:'1px solid #EB9319'}} className="red"></div>
+      <div style={{background:'#EB9319',border:'1px solid #EB9319'}} className="red"></div>
+      <div style={{background:'#EB9319',border:'1px solid #EB9319'}} className="red"></div>
+      <div style={{background:'#EB9319',border:'1px solid #EB9319'}} className="red"></div>
+
+      <div style={{background: '#FFD233',border:'1px solid #FFD233'
+}} className="red"></div>
+      <div style={{background: '#FFD233',border:'1px solid #FFD233'
+}}  className="red"></div>
+      <div  className="red"></div>
+      <div className="red"></div>
+      <div className="red"></div>
+      <div className="red"></div>
+      <div className="red"></div>
+      <div className="red"></div>
+      <div className="red"></div>
+      <div className="red"></div>
+        
+      </div>
+    </div>
+    <img className='right_handle' src={right_handle} alt="" />
   </div>
 </div>
 
