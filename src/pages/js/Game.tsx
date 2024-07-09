@@ -27,15 +27,17 @@ import bottom_level_back from "../img/Group 4 (3).svg"
 import top_grid_first_img from "../img/1.svg"
 import top_grid_second_img from "../img/2.svg"
 import image_for_back from "../img/Rectangle 92.svg"
-import new_gun from "../img/new 2 4 (1).svg"
+import new_gun from "../img/Mask group.svg"
 import el_handle from "../img/el (1).svg"
 import el_handle_second from "../img/el (2).svg"
 import el_handle_back_first from "../img/Rectangle 18.svg"
 import el_handle_back_second from "../img/Rectangle 18 (1).svg"
+import back_black_for_handle from "../img/Rectangle 17.png"
 import left_handle from "../img/left.svg"
 import right_handle from "../img/right.svg"
 import '../css/Game.css';
 import line_viability from "../img/line.png"
+import back_black_for_handle_2 from "../img/Rectangle 17 (1).png"
 function Game() {
   return (
     <div className="Game">
@@ -110,8 +112,8 @@ function Game() {
 <div className="level_game">
   <img className='bottom_level_back' src={bottom_level_back} alt="" />
   <div className="game_grid">
-<div className="game_grid_first">
-  <div className="handle_first_div">
+   {/* <div className="game_grid_first">
+   <div className="handle_first_div">
     <img className='el_handle' src={el_handle} alt="" />
     <img className='el_handle_back_first' src={el_handle_back_first} alt="" />
   <span>обойма:</span>
@@ -131,8 +133,31 @@ function Game() {
 <img className='el_handle_second' src={el_handle_second} alt="" />
 <span>мощность:</span>
 <h3>1234</h3>
-</div>
+</div> */}
 
+<div className="gun__Game_first">
+<img className='el_handle' src={el_handle} alt="" />
+<img className='el_handle_back_first' src={el_handle_back_first} alt="" />
+<span>обойма:</span>
+<h3>1234</h3>
+<img className='back_black_for_handle' src={back_black_for_handle} alt="" />  
+</div>
+<div className="gun__Game_second">
+<img  className='top_grid_first_img' src={top_grid_first_img}alt="" />
+<img className='top_grid_second_img' src={top_grid_second_img} alt="" />
+<img className='image_for_back' src={image_for_back} alt="" />
+<div className="line_shadow_green"></div>
+<div className="line_shadow_green2"></div>
+<img className='new_gun' src={new_gun} alt="" />
+
+</div>
+<div className="gun__Game_third">
+<img className='el_handle_back_second' src={el_handle_back_second} alt="" />
+<img className='el_handle_second' src={el_handle_second} alt="" />
+<span>мощность:</span>
+<h3>1234</h3>
+<img className='back_black_for_handle_2' src={back_black_for_handle_2} alt="" />
+</div>
   </div>
   <div className="viability">
     <img className='left_handle' src={left_handle} alt="" />
