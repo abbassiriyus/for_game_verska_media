@@ -112,28 +112,7 @@ function Game() {
 <div className="level_game">
   <img className='bottom_level_back' src={bottom_level_back} alt="" />
   <div className="game_grid">
-   {/* <div className="game_grid_first">
-   <div className="handle_first_div">
-    <img className='el_handle' src={el_handle} alt="" />
-    <img className='el_handle_back_first' src={el_handle_back_first} alt="" />
-  <span>обойма:</span>
-  <h3>1234</h3>
-  </div>
-</div>
-<div className="game_grid_second">
-  <img className='top_grid_first_img' src={top_grid_first_img} alt="" />
-  <img className='top_grid_second_img' src={top_grid_second_img} alt="" />
-  <img className='image_for_back' src={image_for_back} alt="" />
-  <img className='new_gun' src={new_gun} alt="" />
-  <div className="line_shadow_green"></div>
-  <div className="line_shadow_green2"></div>
-</div>
-<div className="game_grid_third">
-<img className='el_handle_back_second' src={el_handle_back_second} alt="" />
-<img className='el_handle_second' src={el_handle_second} alt="" />
-<span>мощность:</span>
-<h3>1234</h3>
-</div> */}
+
 
 <div className="gun__Game_first">
 <img className='el_handle' src={el_handle} alt="" />
